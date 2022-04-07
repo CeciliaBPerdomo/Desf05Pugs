@@ -1,0 +1,19 @@
+extends layout
+
+block productos
+    h1(style="color:blue;")="Ingreso de productos"
+
+    form(action="/productos" method="post")
+        div 
+            label(for="nombre")="Nombre:"
+            input(id="nombre" class="form-control" type="text" name="nombre")
+        
+        div
+            label(for="precio")="Precio:"
+            input(id="precio" class="form-control" type="text" name="precio") 
+
+        div 
+            label(for="foto")="Foto:"
+            input(id="foto" class="form-control" type="text" name="foto") 
+        
+        button="Enviar"
